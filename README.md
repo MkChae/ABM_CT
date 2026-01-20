@@ -1,4 +1,4 @@
-# Contact Tracing with Incomplete Information (IBM, Julia)
+# Contact Tracing with Incomplete Information (Julia)
 
 This repository contains a multi-threaded **Agent-Based Model (ABM)** implemented in **Julia** to simulate infectious disease transmission under **imperfect contact tracing**.  
 The model explicitly incorporates **missing information** in both infectors and contacts and evaluates how different omission mechanisms affect epidemic dynamics.
