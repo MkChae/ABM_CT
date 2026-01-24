@@ -39,3 +39,46 @@ The repository includes three main simulation scripts:
 ├── ct_main_UCO.jl     # Main simulation: Universal Contact Omission (UCO)
 ├── ct_ftn.jl          # Core functions (IBM engine, contact tracing, disease dynamics)
 └── README.md
+```
+
+---
+
+## Input Data
+
+The simulation requires **synthetic population input data**, which are **not included in this repository**.
+
+The input data are available via **FigShare**:
+- https://doi.org/10.6084/m9.figshare.31142995
+
+### Cities
+The dataset includes two metropolitan areas:
+- **Seoul**
+- **Busan**
+
+### Social Layers
+For each city, three complementary CSV files describe different layers of social structure:
+
+- **Household & Demographics (`eco`)**  
+  Individual identifiers, household membership, region, age, and basic demographic attributes.
+
+- **School / Workplace (`edueco`)**  
+  School classroom or workplace affiliations used to model structured daytime contacts.
+
+- **Friendship Network (`frd`)**  
+  Explicit friend lists used to generate group-based social gatherings.
+
+### Input File List
+
+**Seoul**
+- `synthetic_population_eco_v2.csv`
+- `synthetic_population_edueco_v2.csv`
+- `synthetic_population_frd_v2.csv`
+
+**Busan**
+- `synthetic_population_busan_eco_v2.csv`
+- `synthetic_population_busan_edueco_v2.csv`
+- `synthetic_population_busan2_frd_v2.csv`
+
+The input files are merged at runtime to construct a unified individual-level population with layered contact structures.
+
+
